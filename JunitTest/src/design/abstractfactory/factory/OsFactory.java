@@ -12,6 +12,8 @@ public abstract class OsFactory {
 		try {
 			
 			//引数の完全装飾クラス名に応じてインスタンスを生成する。
+			//Classクラスを使用することにより、if文などを用いるよりも、柔軟な拡張性を持たせることができる。
+			//上記のような記述をリフレクションと呼ぶ。
 			factory = (OsFactory)Class.forName( className ).newInstance();
 			
 		}catch( ClassNotFoundException e ) {
@@ -23,7 +25,6 @@ public abstract class OsFactory {
 		
 		return factory;
 	}
-	
 	
 	//FileSystem生成用のメソッド
 	public abstract OsFileSystem createFileSystem();
