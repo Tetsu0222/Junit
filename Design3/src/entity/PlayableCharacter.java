@@ -1,0 +1,64 @@
+package entity;
+
+public class PlayableCharacter extends BattleCharacter{
+	
+	private String name;
+	private Integer hp;
+	private Integer atk;
+	private String type;
+	private Integer turnNumber;
+	
+	public PlayableCharacter( String name , Integer hp , Integer atk) {
+		this.name = name;
+		this.hp = hp;
+		this.atk = atk;
+		this.type = "enemy";
+	}
+
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Integer getHp() {
+		return hp;
+	}
+
+	public void setHp(Integer hp) {
+		this.hp = hp;
+	}
+
+	public Integer getAtk() {
+		return atk;
+	}
+
+	public void setAtk(Integer atk) {
+		this.atk = atk;
+	}
+
+
+	public String getType() {
+		return type;
+	}
+
+
+	public Integer getTurnNumber() {
+		return turnNumber;
+	}
+
+
+	public void setTurnNumber(Integer turnNumber) {
+		this.turnNumber = turnNumber;
+	}
+
+	
+	
+
+	
+	
+
+}
