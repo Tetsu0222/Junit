@@ -13,11 +13,6 @@ public class BattleResult {
 		}
 		
 		//敗北宣言
-		if( !isVictory) {
-			System.out.println( "プレイヤーは敗北した" );
-			return;
-		}
-		
+		System.out.println( "プレイヤーは敗北した" );
 	}
-
 }

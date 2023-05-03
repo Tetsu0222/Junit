@@ -23,14 +23,14 @@ public class BattleCharacterDao {
 			
 			case "playable":
 				character = new PlayableCharacter( "テストプレイヤー" , 100 , 30 );
-				character.setTurnNumber( i );
+				character.setKey( i );
 				battleCharacterMap.put( i , character );
 				i++;
 				break;
 			
 			case "enemy":
 				character = new EnemyCharacter( "テストエネミー" , 50 , 10 );
-				character.setTurnNumber( i );
+				character.setKey( i );
 				battleCharacterMap.put( i , character );
 				i++;
 				break;

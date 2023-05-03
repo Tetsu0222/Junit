@@ -4,6 +4,7 @@ import entity.BattleCharacter;
 
 public class Damage {
 	
+	
 	public static BattleCharacter calculation( BattleCharacter targetCharacter , Integer atk , String name ) {
 		
 		//ダメージ計算

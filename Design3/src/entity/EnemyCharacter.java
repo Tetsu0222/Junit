@@ -7,7 +7,7 @@ public class EnemyCharacter extends BattleCharacter{
 	private Integer hp;
 	private Integer atk;
 	private String type;
-	private Integer turnNumber;
+	private Integer Key;
 	
 	public EnemyCharacter( String name , Integer hp , Integer atk) {
 		this.name = name;
@@ -46,15 +46,13 @@ public class EnemyCharacter extends BattleCharacter{
 	}
 
 
-	public Integer getTurnNumber() {
-		return turnNumber;
+	public Integer getKey() {
+		return Key;
 	}
 
 
-	public void setTurnNumber(Integer turnNumber) {
-		this.turnNumber = turnNumber;
+	public void setKey(Integer key) {
+		Key = key;
 	}
-	
-	
 
 }

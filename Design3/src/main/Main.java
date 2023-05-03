@@ -18,7 +18,8 @@ public class Main {
 		typeList.add( "playable" );
 		typeList.add( "enemy" );
 		typeList.add( "enemy" );
-		
+		typeList.add( "playable" );
+		typeList.add( "enemy" );
 		
 		//キャラクターの生成
 		Map<Integer,BattleCharacter> battleCharacterMap = BattleCharacterDao.select( typeList );

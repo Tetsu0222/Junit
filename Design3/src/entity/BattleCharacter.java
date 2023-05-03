@@ -16,8 +16,8 @@ public abstract class BattleCharacter {
 	
 	public abstract String getType();
 	
-	public abstract void setTurnNumber( Integer turnNumber );
+	public abstract void setKey( Integer turnNumber );
 	
-	public abstract Integer getTurnNumber();
+	public abstract Integer getKey();
 
 }
